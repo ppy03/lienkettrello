@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Liên Kết</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .bio {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .link-card {
+            display: block;
+            padding: 16px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .link-card:hover {
+            background: rgba(56, 189, 248, 0.15);
+            border-color: #38bdf8;
+            transform: translateY(-2px);
+        }
+
+        /* Kiểu riêng nổi bật cho nút Trello */
+        .link-card.trello {
+            background: rgba(0, 121, 191, 0.2);
+            border-color: #0079bf;
+        }
+
+        .link-card.trello:hover {
+            background: rgba(0, 121, 191, 0.4);
+            border-color: #38bdf8;
+        }
+
+        footer {
+            margin-top: 32px;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="profile-img">
+
+        <h1>Dự Án WinForms</h1>
+        <p class="bio">Tổng hợp các liên kết truy cập dự án Quản lý điểm</p>
+
+        <div class="links-container">
+            <a href="https://trello.com/invite/b/6a92ea233e0df65728b17eb9/ATTI3257b02ae3043d8926c777b13a9be7596D226C67/📘-dự-an-quản-ly-diểm-winforms" target="_blank" class="link-card trello">
+                📘 Trello: Dự án Quản lý điểm WinForms
+            </a>
+
+            <a href="https://facebook.com" target="_blank" class="link-card">Facebook</a>
+            <a href="https://zalo.me" target="_blank" class="link-card">Zalo Contact</a>
+        </div>
+
+        <footer>
+            © 2026 Powered by GitHub Pages
+        </footer>
+    </div>
+
+</body>
+</html>
